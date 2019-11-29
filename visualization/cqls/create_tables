@@ -1,0 +1,17 @@
+create table transactions (
+add_id int,
+block_id int,
+nbr_id int,
+txid int,
+role text,
+amount float,
+timestamp timestamp,
+primary key ((add_id, block_id), nbr_id, tx_id));
+
+create table node_info (
+add_id int,
+num_txs int,
+add_hash text,
+in_deg int,
+out_deg int,
+primary key (add_id));
